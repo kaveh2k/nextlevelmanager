@@ -1,0 +1,63 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* search product tiles*/
+.tile {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Add shadow for depth */
+  background-color: #f9f9f9; /* Subtle background color for contrast */
+}
+
+
+/* search product slider */
+/* Customizing the arrow colors to match Tailwind's color palette */
+.slick-prev:before, .slick-next:before {
+  color: #f97316; /* Example: Tailwind's 'orange-500' */
+}
+
+/* Customizing the dot colors */
+.slick-dots li button:before {
+  color: #6b7280; /* Example: Tailwind's 'gray-500' for inactive dots */
+}
+.slick-dots li.slick-active button:before {
+  color: #2563eb; /* Example: Tailwind's 'blue-500' for the active dot */
+}
+/* Example: Using Tailwind's design tokens in custom CSS */
+.slick-prev:before, .slick-next:before {
+  color: theme('colors.blue.500'); /* This syntax is conceptual and needs to be replaced with actual color values from your Tailwind config */
+}
+
+
+
+/* total price animation */
+@keyframes increaseAnimation {
+  0% { background-color: transparent; color: inherit; }
+  25%, 75% { background-color: #d1e7dd; color: #0f5132; }
+  100% { background-color: transparent; color: inherit; }
+}
+
+@keyframes decreaseAnimation {
+  0% { background-color: transparent; color: inherit; }
+  25%, 75% { background-color: #f8d7da; color: #842029; }
+  100% { background-color: transparent; color: inherit; }
+}
+
+.animate-increase {
+  animation: increaseAnimation 1s ease-in-out forwards;
+}
+
+.animate-decrease {
+  animation: decreaseAnimation 1s ease-in-out forwards;
+}
+
+
+
+
+
+/* Loading */

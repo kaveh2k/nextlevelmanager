@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-800 flex justify-center items-center h-screen">
+    <div class="w-full max-w-md p-8 bg-white rounded shadow-lg">
+      <h1 class="text-3xl text-center font-bold mb-4">Loading...</h1>
+      <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+        <div
+          id="progress-bar"
+          class="bg-blue-600 h-2.5 rounded-full"
+          style="width: 0%"
+        ></div>
+      </div>
+      <p id="counter" class="text-center mt-4 text-gray-600">0%</p>
+      <script>
+        const progressBar = document.getElementById("progress-bar");
+        const counter = document.getElementById("counter");
+        let progress = 0;
+        let timer = setInterval(() => {
+          progress += 5;
+          progressBar.style.width = `${progress}%`;
+          counter.textContent = `${progress}%`;
+          if (progress === 100) {
+            clearInterval(timer);
+          }
+        }, 150);
+      </script>
+    </div>
+  </body>
+</html>
