@@ -21,11 +21,11 @@ NextLevelManager is an offline application built with Next.js and Electron.js to
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/next-level-manager.git
+    git clone https://github.com/kaveh2k/nextlevelmanager.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd next-level-manager
+    cd nextlevelmanager
     ```
 3. Install dependencies:
     ```bash
