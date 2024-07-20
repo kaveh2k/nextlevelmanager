@@ -1,5 +1,7 @@
 # NextLevelManager
 
+![sample picture](./public/sample.PNG "sample shop picture")
+
 NextLevelManager is an offline application built with Next.js and Electron.js to manage your shop and inventory. The application allows you to add or delete items from your inventory and automatically creates invoices for your in-store or online customers.
 
 **Current Status:** Development
@@ -38,6 +40,8 @@ To run the development server, use the following command:
 npm run dev
 ```
 This command runs `npm run devNext` and `npm run electron` concurrently using the `concurrently` package to keep both servers running in parallel.
+
+make sure to put your `menu-logo.png` picture in the `./DataBase` folder (or create this directory)
 
 ## Future Features
 
